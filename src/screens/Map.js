@@ -4,7 +4,7 @@ import {
   StyleSheet,
   ScrollView, TouchableOpacity,
 } from 'react-native';
-import { Container, Text, Header } from 'native-base';
+import {Container, Text, Header } from 'native-base';
 
 import Navbar from '../components/Navbar';
 

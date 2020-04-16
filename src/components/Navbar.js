@@ -5,6 +5,8 @@ import {
 import { Body, Button, Header, Icon, Left, Right, Title } from 'native-base';
 import PropTypes from 'prop-types';
 
+import { mainColor, navIconColor, navTextColor } from '../constants';
+
 export default class Navbar extends React.Component {
   async componentDidMount() {
     this.setState({
@@ -15,7 +17,7 @@ export default class Navbar extends React.Component {
   render() {
     const { title, navigation, backButton } = this.props;
     return (
-      <Header>
+      <Header style={styles.navbar}>
         <Left>
           {
             backButton ? <Button transparent onPress={() => navigation.pop()}>
@@ -27,7 +29,7 @@ export default class Navbar extends React.Component {
           }
         </Left>
         <Body>
-          <Title>{title}</Title>
+          <Title style={styles.title}>{title}</Title>
         </Body>
         <Right />
       </Header>
@@ -36,9 +38,17 @@ export default class Navbar extends React.Component {
 };
 
 const styles = StyleSheet.create({
+  navbar: {
+    backgroundColor: mainColor,
+    borderBottomWidth: 0,
+  },
   leftIcon: {
-    fontSize: 26
-  }
+    fontSize: 26,
+    color: navIconColor,
+  },
+  title: {
+    color: navTextColor,
+  },
 });
 
 Navbar.propTypes = {
