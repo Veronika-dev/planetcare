@@ -17,7 +17,7 @@ import { Icon } from 'native-base';
 
 import { navIconColor, textColor, appColor } from './src/constants';
 
-import MapScreen from './src/screens/Map';
+import MapScreen from './src/screens/MapScreen';
 import MeetingsScreen from './src/screens/Meetings';
 import NewsScreen from './src/screens/News';
 import DialogsScreen from './src/screens/Dialogs';

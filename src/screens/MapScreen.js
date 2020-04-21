@@ -4,9 +4,10 @@ import {
   StyleSheet,
   ScrollView, TouchableOpacity,
 } from 'react-native';
-import {Container, Text, Header } from 'native-base';
+import { Container, Text, Header } from 'native-base';
 
 import Navbar from '../components/Navbar';
+import RNMap from '../components/RNMap';
 
 export default class Map extends React.Component {
   async componentDidMount() {
@@ -24,8 +25,7 @@ export default class Map extends React.Component {
           contentInsetAdjustmentBehavior="automatic"
           style={styles.scrollView}>
           <Container>
-            <Text>Open up App.js to start working on your app!</Text>
-            <TouchableOpacity onPress={() => { navigation.navigate('Dialog') }}><Text>to dialog</Text></TouchableOpacity>
+            <RNMap />
           </Container>
         </ScrollView>
       </SafeAreaView>
