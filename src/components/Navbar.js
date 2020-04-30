@@ -15,13 +15,13 @@ export default class Navbar extends React.Component {
   }
 
   render() {
-    const { title, navigation, backButton } = this.props;
+    const { title, navigation, backButton, transparent } = this.props;
     return (
-      <Header style={styles.navbar}>
+      <Header style={[transparent ? styles.transpNavbar : styles.navbar]}>
         <Left>
           {
             backButton ? <Button transparent onPress={() => navigation.pop()}>
-              <Icon name="arrow-back" style={styles.leftIcon} />
+              <Icon name="arrow-back" style={[styles.leftIcon, transparent ? styles.iconWhite : {}]} />
             </Button> :
               <Button transparent onPress={() => navigation.toggleDrawer()}>
                 <Icon name="menu" style={styles.leftIcon} />
@@ -42,16 +42,31 @@ const styles = StyleSheet.create({
     backgroundColor: mainColor,
     borderBottomWidth: 0,
   },
+  transpNavbar: {
+    borderBottomWidth: 0,
+    backgroundColor: 'rgba(0, 0, 0, 0)',
+  },
   leftIcon: {
     fontSize: 26,
     color: navIconColor,
+  },
+  iconWhite: {
+    color: '#ffffff',
   },
   title: {
     color: navTextColor,
   },
 });
 
+Navbar.defaultProps = {
+  title: '',
+  transparent: false,
+  backButton: false,
+};
+
 Navbar.propTypes = {
   navigation: PropTypes.any.isRequired,
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
+  backButton: PropTypes.bool,
+  transparent: PropTypes.bool,
 };

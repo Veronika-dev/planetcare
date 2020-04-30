@@ -19,6 +19,8 @@ import { navIconColor, textColor, appColor } from './src/constants';
 
 import MapScreen from './src/screens/MapScreen';
 import MeetingsScreen from './src/screens/Meetings';
+import MeetingCreateScreen from './src/screens/MeetingCreate';
+import MeetingViewScreen from './src/screens/MeetingView';
 import NewsScreen from './src/screens/News';
 import DialogsScreen from './src/screens/Dialogs';
 import DialogScreen from './src/screens/Dialog';
@@ -34,7 +36,7 @@ const Stack = createStackNavigator();
 
 function DrawerStack() {
   return (
-    <Drawer.Navigator initialRouteName="Map" drawerContent={props => <Sidebar {...props} /> }
+    <Drawer.Navigator initialRouteName="Meetings" drawerContent={props => <Sidebar {...props} /> }
                       drawerType="slide" overlayColor="rgba(51, 51, 51, 0.3)"
                       drawerContentOptions={{
                         activeBackgroundColor: 'rgba(0, 0, 0, 0)',
@@ -45,11 +47,11 @@ function DrawerStack() {
                       }}>
       <Drawer.Screen name="Map" component={MapScreen} options={{ title: 'Карта',
         drawerIcon: ({ focused }) => <View style={styles.iconContainer}><Icon name="md-map" style={{ ...styles.icon, color: focused ? appColor : navIconColor }} /></View> }} />
-      <Drawer.Screen name="Meetings" component={MeetingsScreen} options={{ title: 'Встречи',
+      <Drawer.Screen name="Meetings" component={MeetingsScreen} options={{ title: 'События',
         drawerIcon: ({ focused }) => <View style={styles.iconContainer}><Icon name="people" style={{ ...styles.icon, color: focused ? appColor : navIconColor }} /></View> }} />
       <Drawer.Screen name="News" component={NewsScreen} options={{ title: 'Новости',
         drawerIcon: ({ focused }) => <View style={styles.iconContainer}><Icon name="paper" style={{ ...styles.icon, color: focused ? appColor : navIconColor }} /></View> }} />
-      <Drawer.Screen name="Dialogs" component={DialogsScreen} options={{ title: 'Диалоги',
+      <Drawer.Screen name="Dialogs" component={DialogsScreen} options={{ title: 'Сообщения',
         drawerIcon: ({ focused }) => <View style={styles.iconContainer}><Icon name="chatbubbles" style={{ ...styles.icon, color: focused ? appColor : navIconColor }} /></View> }} />
       <Drawer.Screen name="Friends" component={FriendsScreen} options={{ title: 'Друзья',
         drawerIcon: ({ focused }) => <View style={styles.iconContainer}><Icon name="person" style={{ ...styles.icon, color: focused ? appColor : navIconColor }} /></View> }} />
@@ -69,7 +71,9 @@ const App: () => React$Node = () => {
       <NavigationContainer>
         <Stack.Navigator mode="modal" headerMode="none" initialRouteName="Main">
           <Stack.Screen name="Main" component={DrawerStack} />
-          <Stack.Screen name="Dialog" component={DialogScreen} options={{ title: 'Диалог' }} />
+          <Stack.Screen name="Dialog" component={DialogScreen} />
+          <Stack.Screen name="MeetingCreate" component={MeetingCreateScreen} />
+          <Stack.Screen name="MeetingView" component={MeetingViewScreen} />
         </Stack.Navigator>
       </NavigationContainer>
     </>

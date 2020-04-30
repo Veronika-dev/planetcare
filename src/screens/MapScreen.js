@@ -10,10 +10,9 @@ import Navbar from '../components/Navbar';
 import RNMap from '../components/RNMap';
 
 export default class Map extends React.Component {
-  async componentDidMount() {
-    this.setState({
-      isReady: true,
-    });
+  constructor(props) {
+    super(props);
+    this.state = {};
   }
 
   render() {
