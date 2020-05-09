@@ -31,6 +31,8 @@ import InstructionsViewScreen from './src/screens/InstructionsView';
 import RatingScreen from './src/screens/Rating';
 import SettingsScreen from './src/screens/Settings';
 import AuthorizationScreen from './src/screens/Authorization';
+import ProfileViewScreen from './src/screens/ProfileView';
+import ProfileEditScreen from './src/screens/ProfileEdit';
 
 import Sidebar from './src/components/Sidebar';
 
@@ -72,7 +74,7 @@ const App: () => React$Node = () => {
     <>
       <StatusBar barStyle="dark-content" />
       <NavigationContainer>
-        <Stack.Navigator mode="modal" headerMode="none" initialRouteName="Main">
+        <Stack.Navigator mode="modal" headerMode="none" initialRouteName="ProfileEdit">
           <Stack.Screen name="Main" component={DrawerStack} />
           <Stack.Screen name="Dialog" component={DialogScreen} />
           <Stack.Screen name="MeetingCreate" component={MeetingCreateScreen} />
@@ -80,6 +82,8 @@ const App: () => React$Node = () => {
           <Stack.Screen name="NewsView" component={NewsViewScreen} />
           <Stack.Screen name="InstructionsView" component={InstructionsViewScreen} />
           <Stack.Screen name="Authorization" component={AuthorizationScreen} />
+          <Stack.Screen name="ProfileView" component={ProfileViewScreen} />
+          <Stack.Screen name="ProfileEdit" component={ProfileEditScreen} />
         </Stack.Navigator>
       </NavigationContainer>
     </>
