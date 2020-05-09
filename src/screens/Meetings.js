@@ -33,9 +33,9 @@ export default class Meetings extends React.Component {
         <View style={{ flex: 1 }}>
             <List>
               {
-                marks.map(item => {
+                marks.map((item, i) => {
                   return (
-                    <ListItem avatar button onPress={() => navigation.navigate('MeetingView', { type: 'meet' })}>
+                    <ListItem avatar button onPress={() => navigation.navigate('MeetingView', { type: 'meet' })} key={i}>
                       <Left>
                         <Thumbnail source={item.images[0]} />
                       </Left>

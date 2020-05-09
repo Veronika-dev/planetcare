@@ -11,13 +11,14 @@ import LinearGradient from 'react-native-linear-gradient';
 
 import Navbar from '../components/Navbar';
 
-export default class NewsView extends React.Component {
+export default class InstructionsView extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      news: {
-        title: 'Активисты потушили пожар',
-        description: 'Был потушен пожар',
+      instructions: {
+        title: 'С чего начать?',
+        description: 'Чтобы защищать природу, нужно...',
+        type: 'useful',
         created_date: '20.04.2020 13:43',
         images: [require('../assets/2.jpg')],
       },
@@ -25,7 +26,7 @@ export default class NewsView extends React.Component {
   }
   render(){
     const { navigation } = this.props;
-    const { news } = this.state;
+    const { instructions } = this.state;
     return (
       <Container>
         <LinearGradient
@@ -37,7 +38,7 @@ export default class NewsView extends React.Component {
         <ScrollView style={styles.containerStyle}>
           <Swiper style={styles.swiperStyle}>
             {
-              news.images.map((img, i) => {
+              instructions.images.map((img, i) => {
                 return (
                   <View style={styles.slideStyle} key={i}>
                     <Image source={img} style={styles.slideImgStyle} resizeMode="cover" />
@@ -47,12 +48,12 @@ export default class NewsView extends React.Component {
             }
           </Swiper>
           <View style={styles.containerStyle}>
-            <H2 style={styles.titleStyle}>{news.title}</H2>
+            <H2 style={styles.titleStyle}>{instructions.title}</H2>
             <View style={styles.infoRowStyle}>
-              <Text note>{news.created_date}</Text>
+              <Text note>{instructions.created_date}</Text>
             </View>
             <View style={styles.infoRowStyle}>
-              <Text>{news.description}</Text>
+              <Text>{instructions.description}</Text>
             </View>
           </View>
         </ScrollView>

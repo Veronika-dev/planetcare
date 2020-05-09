@@ -14,8 +14,7 @@ export default class News extends React.Component {
         {
           title: 'Активисты потушили пожар',
           description: 'Был потушен пожар',
-          location: 'Новосибирск',
-          event_date: '20.04.2020 13:43',
+          created_date: '20.04.2020 13:43',
           images: [require('../assets/2.jpg')],
         },
       ],
@@ -39,10 +38,9 @@ export default class News extends React.Component {
                     <Body>
                       <Text>{item.title}</Text>
                       <Text note>{item.description}</Text>
-                      <Text note>{item.location}</Text>
                     </Body>
                     <Right>
-                      <Text note>{item.event_date}</Text>
+                      <Text note>{item.created_date}</Text>
                     </Right>
                   </ListItem>
                 );

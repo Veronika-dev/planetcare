@@ -22,10 +22,12 @@ import MeetingsScreen from './src/screens/Meetings';
 import MeetingCreateScreen from './src/screens/MeetingCreate';
 import MeetingViewScreen from './src/screens/MeetingView';
 import NewsScreen from './src/screens/News';
+import NewsViewScreen from './src/screens/NewsView';
 import DialogsScreen from './src/screens/Dialogs';
 import DialogScreen from './src/screens/Dialog';
 import FriendsScreen from './src/screens/Friends';
 import InstructionsScreen from './src/screens/Instructions';
+import InstructionsViewScreen from './src/screens/InstructionsView';
 import RatingScreen from './src/screens/Rating';
 import SettingsScreen from './src/screens/Settings';
 import AuthorizationScreen from './src/screens/Authorization';
@@ -75,6 +77,8 @@ const App: () => React$Node = () => {
           <Stack.Screen name="Dialog" component={DialogScreen} />
           <Stack.Screen name="MeetingCreate" component={MeetingCreateScreen} />
           <Stack.Screen name="MeetingView" component={MeetingViewScreen} />
+          <Stack.Screen name="NewsView" component={NewsViewScreen} />
+          <Stack.Screen name="InstructionsView" component={InstructionsViewScreen} />
           <Stack.Screen name="Authorization" component={AuthorizationScreen} />
         </Stack.Navigator>
       </NavigationContainer>
