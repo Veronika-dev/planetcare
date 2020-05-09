@@ -28,6 +28,7 @@ import FriendsScreen from './src/screens/Friends';
 import InstructionsScreen from './src/screens/Instructions';
 import RatingScreen from './src/screens/Rating';
 import SettingsScreen from './src/screens/Settings';
+import AuthorizationScreen from './src/screens/Authorization';
 
 import Sidebar from './src/components/Sidebar';
 
@@ -36,7 +37,7 @@ const Stack = createStackNavigator();
 
 function DrawerStack() {
   return (
-    <Drawer.Navigator initialRouteName="Meetings" drawerContent={props => <Sidebar {...props} /> }
+    <Drawer.Navigator initialRouteName="News" drawerContent={props => <Sidebar {...props} /> }
                       drawerType="slide" overlayColor="rgba(51, 51, 51, 0.3)"
                       drawerContentOptions={{
                         activeBackgroundColor: 'rgba(0, 0, 0, 0)',
@@ -74,6 +75,7 @@ const App: () => React$Node = () => {
           <Stack.Screen name="Dialog" component={DialogScreen} />
           <Stack.Screen name="MeetingCreate" component={MeetingCreateScreen} />
           <Stack.Screen name="MeetingView" component={MeetingViewScreen} />
+          <Stack.Screen name="Authorization" component={AuthorizationScreen} />
         </Stack.Navigator>
       </NavigationContainer>
     </>

@@ -35,7 +35,7 @@ export default class Navbar extends React.Component {
       </Header>
     );
   }
-};
+}
 
 const styles = StyleSheet.create({
   navbar: {

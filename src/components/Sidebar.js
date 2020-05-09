@@ -11,11 +11,12 @@ import { mainColor, descriptionColor } from '../constants';
 
 export default class SideBar extends React.Component {
   render() {
+    const { navigation } = this.props;
     return (
       <Container style={styles.container}>
         <Content>
           <DrawerContentScrollView {...this.props}>
-            <TouchableOpacity onPress={() => {}} style={styles.profileContainer}>
+            <TouchableOpacity onPress={() => navigation.navigate('Authorization', { type: 'login' })} style={styles.profileContainer}>
               <View style={styles.profileContent}>
                 <Image source={require('../assets/profile_image.png')} style={styles.profileImage}  />
                 <View>

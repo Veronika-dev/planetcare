@@ -1,28 +1,58 @@
 import React from 'react';
 import {
-  SafeAreaView,
   StyleSheet,
-  ScrollView,
   View,
-  Text,
 } from 'react-native';
+import Navbar from '../components/Navbar';
+import { Body, Container, Left, List, ListItem, Right, Thumbnail, Text } from 'native-base';
 
-const News: () => React$Node = () => {
-  return (
-    <SafeAreaView>
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={styles.scrollView}>
-        <View style={styles.sectionContainer}>
-          <Text style={styles.sectionDescription}>
-            News Screen
-          </Text>
+export default class News extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      news: [
+        {
+          title: 'Активисты потушили пожар',
+          description: 'Был потушен пожар',
+          location: 'Новосибирск',
+          event_date: '20.04.2020 13:43',
+          images: [require('../assets/2.jpg')],
+        },
+      ],
+    };
+  }
+  render(){
+    const { navigation } = this.props;
+    const { news } = this.state;
+    return (
+      <Container>
+        <Navbar title="Новости" navigation={navigation}/>
+        <View style={{ flex: 1 }}>
+          <List>
+            {
+              news.map((item, ind) => {
+                return (
+                  <ListItem avatar button onPress={() => navigation.navigate('NewsView')} key={ind}>
+                    <Left>
+                      <Thumbnail source={item.images[0]} />
+                    </Left>
+                    <Body>
+                      <Text>{item.title}</Text>
+                      <Text note>{item.description}</Text>
+                      <Text note>{item.location}</Text>
+                    </Body>
+                    <Right>
+                      <Text note>{item.event_date}</Text>
+                    </Right>
+                  </ListItem>
+                );
+              })
+            }
+          </List>
         </View>
-      </ScrollView>
-    </SafeAreaView>
-  );
-};
+      </Container>
+    );
+  }
+}
 
 const styles = StyleSheet.create({});
-
-export default News;
