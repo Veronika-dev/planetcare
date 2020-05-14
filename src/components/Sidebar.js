@@ -4,14 +4,14 @@ import { Container, Content, Text } from 'native-base';
 import {
   DrawerContentScrollView,
   DrawerItemList,
-  DrawerItem,
 } from '@react-navigation/drawer';
 
 import { mainColor, descriptionColor } from '../constants';
 
 export default class SideBar extends React.Component {
   render() {
-    const { navigation } = this.props;
+    const { navigation, userData } = this.props;
+    console.log('userData', userData);
     return (
       <Container style={styles.container}>
         <Content>
@@ -19,10 +19,17 @@ export default class SideBar extends React.Component {
             <TouchableOpacity onPress={() => navigation.navigate('Authorization', { type: 'login' })} style={styles.profileContainer}>
               <View style={styles.profileContent}>
                 <Image source={require('../assets/profile_image.png')} style={styles.profileImage}  />
-                <View>
-                  <Text style={styles.nameText}>Войти</Text>
-                  {/*<Text style={styles.positionText}>Мастер</Text>*/}
-                </View>
+                {
+                  userData ?
+                    <TouchableOpacity onPress={() => {}}>
+                      <Text style={styles.nameText}>Выйти</Text>
+                      {/*<Text style={styles.positionText}>Мастер</Text>*/}
+                    </TouchableOpacity> :
+                    <TouchableOpacity onPress={() => {}}>
+                      <Text style={styles.nameText}>Войти</Text>
+                      {/*<Text style={styles.positionText}>Мастер</Text>*/}
+                    </TouchableOpacity>
+                }
               </View>
             </TouchableOpacity>
             <DrawerItemList {...this.props} />

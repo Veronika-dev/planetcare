@@ -7,38 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0021170488BF40FF88D27694 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D87D22FE21B142AC8C92FF86 /* Zocial.ttf */; };
 		00E356F31AD99517003FC87E /* planetcareTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* planetcareTests.m */; };
-		056572DC30EC55869CD0B341 /* libPods-planetcare-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF7973B3057790B71EDDAABC /* libPods-planetcare-tvOS.a */; };
+		018BFB58D6342F819EFEEDD3 /* libPods-planetcare-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8209579AA39C9DFDC5F04F44 /* libPods-planetcare-tvOS.a */; };
+		053AD22F74F34FB0BD0C529D /* Roboto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B62B9A27FE84F9BB1B8A169 /* Roboto.ttf */; };
+		070FAE7C055A881E030D61A8 /* libPods-planetcare-planetcareTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6AD3A3202AEB0EFC633B3D2 /* libPods-planetcare-planetcareTests.a */; };
+		0A3D45D50F08C3DF771F04A0 /* libPods-planetcare.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D693F8568C8B853CBDA80CAE /* libPods-planetcare.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		2CF5F67F3CD05CF7BB3B82F3 /* libPods-planetcare.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE9AA8C4D944D1FFA4A9D156 /* libPods-planetcare.a */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* planetcareTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* planetcareTests.m */; };
-		4554351814FBF829F4D6013E /* libPods-planetcare-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F04C9B02A9FBDF31CF34F906 /* libPods-planetcare-tvOSTests.a */; };
-		890ECB8D8980ACA7E1A03409 /* libPods-planetcare-planetcareTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D659A7AC1FC8269C9AFF51AF /* libPods-planetcare-planetcareTests.a */; };
-		9702ABB1279B4779B818ED88 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 22ACA801576141039A393B83 /* AntDesign.ttf */; };
-		A7F9586DD8B34C869A4E7A70 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 98B244A788E74A0E9E33FC27 /* Entypo.ttf */; };
-		E6A37961F0EF471793812E71 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0EB1855F7032425F98AF9FAE /* EvilIcons.ttf */; };
-		9B39ECC327DF434D92381601 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CF8C35E9036746DF96BEFCF6 /* Feather.ttf */; };
 		35B5BF98BC784C619B1BF9A0 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C79F44074E914D3ABE75A940 /* FontAwesome.ttf */; };
-		86FD9DC1270A43D0A7FA38A8 /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C27D4022B73444DBF5A9728 /* FontAwesome5_Brands.ttf */; };
-		6615EE00275B4DCD9E73040D /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 916B278DA26849A2B6B9C66C /* FontAwesome5_Regular.ttf */; };
-		7BB1D20D7B85429E8EA632F7 /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69AF32B60DB346BAB73710FC /* FontAwesome5_Solid.ttf */; };
-		F9578F3767DA47FBB9C9645E /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8A446619BF842A1BFD2F56F /* Fontisto.ttf */; };
 		3C8F6AEBFBAA4DC2AC1B24F9 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4A4BBBB9726E440AAA0CA2A4 /* Foundation.ttf */; };
-		A6BB19FC94C74880A3BB0CBF /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5C1BA670FDB74A3DB43BF0BA /* Ionicons.ttf */; };
-		B92D8364B97849A89C1B66E9 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 545FF2249329469EBC517F8D /* MaterialCommunityIcons.ttf */; };
+		3DA7B58A43E71D634F9503E3 /* libPods-planetcare-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EBCD004B46CB6B669FB6D64D /* libPods-planetcare-tvOSTests.a */; };
+		6615EE00275B4DCD9E73040D /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 916B278DA26849A2B6B9C66C /* FontAwesome5_Regular.ttf */; };
 		77C7EC3B004B426CA8318CA3 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74C05C55743743DCBC55B24F /* MaterialIcons.ttf */; };
-		E188607939E04D67BE54A987 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8CACA47A85F24BFB82212638 /* Octicons.ttf */; };
-		A209C16DF5884673B50E5C26 /* Roboto_medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 275139EC47B5482EB32743FB /* Roboto_medium.ttf */; };
-		053AD22F74F34FB0BD0C529D /* Roboto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B62B9A27FE84F9BB1B8A169 /* Roboto.ttf */; };
 		79417409DC014286B0A44271 /* rubicon-icon-font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC62AF64DD4B4131BEC75CD5 /* rubicon-icon-font.ttf */; };
+		7BB1D20D7B85429E8EA632F7 /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69AF32B60DB346BAB73710FC /* FontAwesome5_Solid.ttf */; };
+		86FD9DC1270A43D0A7FA38A8 /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C27D4022B73444DBF5A9728 /* FontAwesome5_Brands.ttf */; };
+		9702ABB1279B4779B818ED88 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 22ACA801576141039A393B83 /* AntDesign.ttf */; };
+		9B39ECC327DF434D92381601 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CF8C35E9036746DF96BEFCF6 /* Feather.ttf */; };
+		A209C16DF5884673B50E5C26 /* Roboto_medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 275139EC47B5482EB32743FB /* Roboto_medium.ttf */; };
+		A6BB19FC94C74880A3BB0CBF /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5C1BA670FDB74A3DB43BF0BA /* Ionicons.ttf */; };
+		A7F9586DD8B34C869A4E7A70 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 98B244A788E74A0E9E33FC27 /* Entypo.ttf */; };
 		B603F4AB4FCD4DAABCE9E525 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A870DE830AEA485086BB74D4 /* SimpleLineIcons.ttf */; };
-		0021170488BF40FF88D27694 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D87D22FE21B142AC8C92FF86 /* Zocial.ttf */; };
+		B92D8364B97849A89C1B66E9 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 545FF2249329469EBC517F8D /* MaterialCommunityIcons.ttf */; };
+		E188607939E04D67BE54A987 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8CACA47A85F24BFB82212638 /* Octicons.ttf */; };
+		E6A37961F0EF471793812E71 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0EB1855F7032425F98AF9FAE /* EvilIcons.ttf */; };
+		F9578F3767DA47FBB9C9645E /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8A446619BF842A1BFD2F56F /* Fontisto.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,7 +63,7 @@
 		00E356EE1AD99517003FC87E /* planetcareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = planetcareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* planetcareTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = planetcareTests.m; sourceTree = "<group>"; };
-		074E257F85301B0EC68CF309 /* Pods-planetcare-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-planetcare-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-planetcare-tvOSTests/Pods-planetcare-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		0EB1855F7032425F98AF9FAE /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/native-base/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* planetcare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = planetcare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = planetcare/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = planetcare/AppDelegate.m; sourceTree = "<group>"; };
@@ -71,40 +71,40 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = planetcare/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = planetcare/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = planetcare/main.m; sourceTree = "<group>"; };
-		1EF5AD0072A12711B064640E /* Pods-planetcare-planetcareTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-planetcare-planetcareTests.release.xcconfig"; path = "Target Support Files/Pods-planetcare-planetcareTests/Pods-planetcare-planetcareTests.release.xcconfig"; sourceTree = "<group>"; };
+		22ACA801576141039A393B83 /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/native-base/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
+		275139EC47B5482EB32743FB /* Roboto_medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Roboto_medium.ttf; path = "../node_modules/native-base/Fonts/Roboto_medium.ttf"; sourceTree = "<group>"; };
+		286C11669F5EE931D45E56F4 /* Pods-planetcare-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-planetcare-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-planetcare-tvOSTests/Pods-planetcare-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* planetcare-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "planetcare-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* planetcare-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "planetcare-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		747515A15AEC1DDFC1A005FC /* Pods-planetcare-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-planetcare-tvOS.release.xcconfig"; path = "Target Support Files/Pods-planetcare-tvOS/Pods-planetcare-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		748746E85924664B52C390D3 /* Pods-planetcare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-planetcare.debug.xcconfig"; path = "Target Support Files/Pods-planetcare/Pods-planetcare.debug.xcconfig"; sourceTree = "<group>"; };
-		7A0993384EB210DAC5CE09DE /* Pods-planetcare-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-planetcare-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-planetcare-tvOSTests/Pods-planetcare-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		ADCA4548DD94CF38788AB591 /* Pods-planetcare-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-planetcare-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-planetcare-tvOS/Pods-planetcare-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		BE9AA8C4D944D1FFA4A9D156 /* libPods-planetcare.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-planetcare.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB394C64C8B63653711711FF /* Pods-planetcare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-planetcare.release.xcconfig"; path = "Target Support Files/Pods-planetcare/Pods-planetcare.release.xcconfig"; sourceTree = "<group>"; };
-		D659A7AC1FC8269C9AFF51AF /* libPods-planetcare-planetcareTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-planetcare-planetcareTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF7973B3057790B71EDDAABC /* libPods-planetcare-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-planetcare-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E0531AD868ADEF5192F239E9 /* Pods-planetcare-planetcareTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-planetcare-planetcareTests.debug.xcconfig"; path = "Target Support Files/Pods-planetcare-planetcareTests/Pods-planetcare-planetcareTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4A4BBBB9726E440AAA0CA2A4 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/native-base/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
+		545FF2249329469EBC517F8D /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/native-base/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
+		5C1BA670FDB74A3DB43BF0BA /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/native-base/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
+		5D05C75D8262917B4B058437 /* Pods-planetcare-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-planetcare-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-planetcare-tvOSTests/Pods-planetcare-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		69AF32B60DB346BAB73710FC /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/native-base/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
+		6A66B0B02A175B48565A10FA /* Pods-planetcare-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-planetcare-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-planetcare-tvOS/Pods-planetcare-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		6B62B9A27FE84F9BB1B8A169 /* Roboto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Roboto.ttf; path = "../node_modules/native-base/Fonts/Roboto.ttf"; sourceTree = "<group>"; };
+		74C05C55743743DCBC55B24F /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/native-base/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
+		8209579AA39C9DFDC5F04F44 /* libPods-planetcare-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-planetcare-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		863490AE1D1A21FA7FEE311F /* Pods-planetcare-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-planetcare-tvOS.release.xcconfig"; path = "Target Support Files/Pods-planetcare-tvOS/Pods-planetcare-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		8CACA47A85F24BFB82212638 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/native-base/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
+		916B278DA26849A2B6B9C66C /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/native-base/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
+		98B244A788E74A0E9E33FC27 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/native-base/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
+		9C27D4022B73444DBF5A9728 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/native-base/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
+		A870DE830AEA485086BB74D4 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/native-base/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
+		AC969CB6394B56CA4032541E /* Pods-planetcare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-planetcare.debug.xcconfig"; path = "Target Support Files/Pods-planetcare/Pods-planetcare.debug.xcconfig"; sourceTree = "<group>"; };
+		B8A446619BF842A1BFD2F56F /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/native-base/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
+		C79F44074E914D3ABE75A940 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/native-base/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
+		CC62AF64DD4B4131BEC75CD5 /* rubicon-icon-font.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "rubicon-icon-font.ttf"; path = "../node_modules/native-base/Fonts/rubicon-icon-font.ttf"; sourceTree = "<group>"; };
+		CF8C35E9036746DF96BEFCF6 /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/native-base/Fonts/Feather.ttf"; sourceTree = "<group>"; };
+		D693F8568C8B853CBDA80CAE /* libPods-planetcare.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-planetcare.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6AD3A3202AEB0EFC633B3D2 /* libPods-planetcare-planetcareTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-planetcare-planetcareTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8464EAB15AA4DE595B68459 /* Pods-planetcare-planetcareTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-planetcare-planetcareTests.debug.xcconfig"; path = "Target Support Files/Pods-planetcare-planetcareTests/Pods-planetcare-planetcareTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D87D22FE21B142AC8C92FF86 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/native-base/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
+		EBCD004B46CB6B669FB6D64D /* libPods-planetcare-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-planetcare-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		F04C9B02A9FBDF31CF34F906 /* libPods-planetcare-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-planetcare-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		22ACA801576141039A393B83 /* AntDesign.ttf */ = {isa = PBXFileReference; name = "AntDesign.ttf"; path = "../node_modules/native-base/Fonts/AntDesign.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		98B244A788E74A0E9E33FC27 /* Entypo.ttf */ = {isa = PBXFileReference; name = "Entypo.ttf"; path = "../node_modules/native-base/Fonts/Entypo.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		0EB1855F7032425F98AF9FAE /* EvilIcons.ttf */ = {isa = PBXFileReference; name = "EvilIcons.ttf"; path = "../node_modules/native-base/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		CF8C35E9036746DF96BEFCF6 /* Feather.ttf */ = {isa = PBXFileReference; name = "Feather.ttf"; path = "../node_modules/native-base/Fonts/Feather.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		C79F44074E914D3ABE75A940 /* FontAwesome.ttf */ = {isa = PBXFileReference; name = "FontAwesome.ttf"; path = "../node_modules/native-base/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		9C27D4022B73444DBF5A9728 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Brands.ttf"; path = "../node_modules/native-base/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		916B278DA26849A2B6B9C66C /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Regular.ttf"; path = "../node_modules/native-base/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		69AF32B60DB346BAB73710FC /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Solid.ttf"; path = "../node_modules/native-base/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		B8A446619BF842A1BFD2F56F /* Fontisto.ttf */ = {isa = PBXFileReference; name = "Fontisto.ttf"; path = "../node_modules/native-base/Fonts/Fontisto.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		4A4BBBB9726E440AAA0CA2A4 /* Foundation.ttf */ = {isa = PBXFileReference; name = "Foundation.ttf"; path = "../node_modules/native-base/Fonts/Foundation.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		5C1BA670FDB74A3DB43BF0BA /* Ionicons.ttf */ = {isa = PBXFileReference; name = "Ionicons.ttf"; path = "../node_modules/native-base/Fonts/Ionicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		545FF2249329469EBC517F8D /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; name = "MaterialCommunityIcons.ttf"; path = "../node_modules/native-base/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		74C05C55743743DCBC55B24F /* MaterialIcons.ttf */ = {isa = PBXFileReference; name = "MaterialIcons.ttf"; path = "../node_modules/native-base/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		8CACA47A85F24BFB82212638 /* Octicons.ttf */ = {isa = PBXFileReference; name = "Octicons.ttf"; path = "../node_modules/native-base/Fonts/Octicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		275139EC47B5482EB32743FB /* Roboto_medium.ttf */ = {isa = PBXFileReference; name = "Roboto_medium.ttf"; path = "../node_modules/native-base/Fonts/Roboto_medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		6B62B9A27FE84F9BB1B8A169 /* Roboto.ttf */ = {isa = PBXFileReference; name = "Roboto.ttf"; path = "../node_modules/native-base/Fonts/Roboto.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		CC62AF64DD4B4131BEC75CD5 /* rubicon-icon-font.ttf */ = {isa = PBXFileReference; name = "rubicon-icon-font.ttf"; path = "../node_modules/native-base/Fonts/rubicon-icon-font.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		A870DE830AEA485086BB74D4 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; name = "SimpleLineIcons.ttf"; path = "../node_modules/native-base/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		D87D22FE21B142AC8C92FF86 /* Zocial.ttf */ = {isa = PBXFileReference; name = "Zocial.ttf"; path = "../node_modules/native-base/Fonts/Zocial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		ED65F8A82BE564883A4A0912 /* Pods-planetcare-planetcareTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-planetcare-planetcareTests.release.xcconfig"; path = "Target Support Files/Pods-planetcare-planetcareTests/Pods-planetcare-planetcareTests.release.xcconfig"; sourceTree = "<group>"; };
+		FE9A33F39E2A54AE818C2F72 /* Pods-planetcare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-planetcare.release.xcconfig"; path = "Target Support Files/Pods-planetcare/Pods-planetcare.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				890ECB8D8980ACA7E1A03409 /* libPods-planetcare-planetcareTests.a in Frameworks */,
+				070FAE7C055A881E030D61A8 /* libPods-planetcare-planetcareTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,7 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CF5F67F3CD05CF7BB3B82F3 /* libPods-planetcare.a in Frameworks */,
+				0A3D45D50F08C3DF771F04A0 /* libPods-planetcare.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,7 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				056572DC30EC55869CD0B341 /* libPods-planetcare-tvOS.a in Frameworks */,
+				018BFB58D6342F819EFEEDD3 /* libPods-planetcare-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +136,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4554351814FBF829F4D6013E /* libPods-planetcare-tvOSTests.a in Frameworks */,
+				3DA7B58A43E71D634F9503E3 /* libPods-planetcare-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,10 +205,10 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				BE9AA8C4D944D1FFA4A9D156 /* libPods-planetcare.a */,
-				D659A7AC1FC8269C9AFF51AF /* libPods-planetcare-planetcareTests.a */,
-				DF7973B3057790B71EDDAABC /* libPods-planetcare-tvOS.a */,
-				F04C9B02A9FBDF31CF34F906 /* libPods-planetcare-tvOSTests.a */,
+				D693F8568C8B853CBDA80CAE /* libPods-planetcare.a */,
+				D6AD3A3202AEB0EFC633B3D2 /* libPods-planetcare-planetcareTests.a */,
+				8209579AA39C9DFDC5F04F44 /* libPods-planetcare-tvOS.a */,
+				EBCD004B46CB6B669FB6D64D /* libPods-planetcare-tvOSTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -216,14 +216,14 @@
 		7E05A1472DF1903B58B975A1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				748746E85924664B52C390D3 /* Pods-planetcare.debug.xcconfig */,
-				CB394C64C8B63653711711FF /* Pods-planetcare.release.xcconfig */,
-				E0531AD868ADEF5192F239E9 /* Pods-planetcare-planetcareTests.debug.xcconfig */,
-				1EF5AD0072A12711B064640E /* Pods-planetcare-planetcareTests.release.xcconfig */,
-				ADCA4548DD94CF38788AB591 /* Pods-planetcare-tvOS.debug.xcconfig */,
-				747515A15AEC1DDFC1A005FC /* Pods-planetcare-tvOS.release.xcconfig */,
-				7A0993384EB210DAC5CE09DE /* Pods-planetcare-tvOSTests.debug.xcconfig */,
-				074E257F85301B0EC68CF309 /* Pods-planetcare-tvOSTests.release.xcconfig */,
+				AC969CB6394B56CA4032541E /* Pods-planetcare.debug.xcconfig */,
+				FE9A33F39E2A54AE818C2F72 /* Pods-planetcare.release.xcconfig */,
+				D8464EAB15AA4DE595B68459 /* Pods-planetcare-planetcareTests.debug.xcconfig */,
+				ED65F8A82BE564883A4A0912 /* Pods-planetcare-planetcareTests.release.xcconfig */,
+				6A66B0B02A175B48565A10FA /* Pods-planetcare-tvOS.debug.xcconfig */,
+				863490AE1D1A21FA7FEE311F /* Pods-planetcare-tvOS.release.xcconfig */,
+				5D05C75D8262917B4B058437 /* Pods-planetcare-tvOSTests.debug.xcconfig */,
+				286C11669F5EE931D45E56F4 /* Pods-planetcare-tvOSTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -269,7 +269,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "planetcareTests" */;
 			buildPhases = (
-				E7845192EB5F56E12E0F0288 /* [CP] Check Pods Manifest.lock */,
+				5BC5325367D5E0DED14317F2 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
@@ -288,7 +288,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "planetcare" */;
 			buildPhases = (
-				FC2BB702599C0156FD615956 /* [CP] Check Pods Manifest.lock */,
+				85D0863B868D590A2BD3C86F /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
@@ -308,7 +308,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "planetcare-tvOS" */;
 			buildPhases = (
-				8A3DE9722685BD6018312900 /* [CP] Check Pods Manifest.lock */,
+				DACD70F15E07D524BB79B6D2 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
 				2D02E4771E0B4A5D006451C7 /* Sources */,
 				2D02E4781E0B4A5D006451C7 /* Frameworks */,
@@ -328,7 +328,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "planetcare-tvOSTests" */;
 			buildPhases = (
-				B47139D68D2EBD9B67CAEA13 /* [CP] Check Pods Manifest.lock */,
+				9AF9F270C5B1EA54093B2EFA /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
 				2D02E48E1E0B4A5D006451C7 /* Resources */,
@@ -472,51 +472,7 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		8A3DE9722685BD6018312900 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-planetcare-tvOS-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B47139D68D2EBD9B67CAEA13 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-planetcare-tvOSTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E7845192EB5F56E12E0F0288 /* [CP] Check Pods Manifest.lock */ = {
+		5BC5325367D5E0DED14317F2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -538,7 +494,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FC2BB702599C0156FD615956 /* [CP] Check Pods Manifest.lock */ = {
+		85D0863B868D590A2BD3C86F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -554,6 +510,50 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-planetcare-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9AF9F270C5B1EA54093B2EFA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-planetcare-tvOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DACD70F15E07D524BB79B6D2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-planetcare-tvOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -665,7 +665,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E0531AD868ADEF5192F239E9 /* Pods-planetcare-planetcareTests.debug.xcconfig */;
+			baseConfigurationReference = D8464EAB15AA4DE595B68459 /* Pods-planetcare-planetcareTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -688,7 +688,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1EF5AD0072A12711B064640E /* Pods-planetcare-planetcareTests.release.xcconfig */;
+			baseConfigurationReference = ED65F8A82BE564883A4A0912 /* Pods-planetcare-planetcareTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -708,7 +708,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 748746E85924664B52C390D3 /* Pods-planetcare.debug.xcconfig */;
+			baseConfigurationReference = AC969CB6394B56CA4032541E /* Pods-planetcare.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -735,7 +735,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CB394C64C8B63653711711FF /* Pods-planetcare.release.xcconfig */;
+			baseConfigurationReference = FE9A33F39E2A54AE818C2F72 /* Pods-planetcare.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -756,7 +756,7 @@
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ADCA4548DD94CF38788AB591 /* Pods-planetcare-tvOS.debug.xcconfig */;
+			baseConfigurationReference = 6A66B0B02A175B48565A10FA /* Pods-planetcare-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -784,7 +784,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 747515A15AEC1DDFC1A005FC /* Pods-planetcare-tvOS.release.xcconfig */;
+			baseConfigurationReference = 863490AE1D1A21FA7FEE311F /* Pods-planetcare-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -812,7 +812,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7A0993384EB210DAC5CE09DE /* Pods-planetcare-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = 5D05C75D8262917B4B058437 /* Pods-planetcare-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -839,7 +839,7 @@
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 074E257F85301B0EC68CF309 /* Pods-planetcare-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = 286C11669F5EE931D45E56F4 /* Pods-planetcare-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
