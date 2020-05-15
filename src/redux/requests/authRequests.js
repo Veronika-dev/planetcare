@@ -30,3 +30,15 @@ export const login = (email, code) =>
     .catch(error =>
       error.response,
     );
+
+// Выход
+export const logout = (token) =>
+  axios.post(`${host}logout`, {}, {
+    headers: getHeaders(token),
+  })
+    .then(result =>
+      result,
+    )
+    .catch(error =>
+      error.response,
+    );

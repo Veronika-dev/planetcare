@@ -1,28 +1,47 @@
 import React from 'react';
 import {
-  SafeAreaView,
   StyleSheet,
-  ScrollView,
   View,
-  Text,
 } from 'react-native';
+import Navbar from '../components/Navbar';
+import { Container, List, ListItem, Text } from 'native-base';
+import { logout } from '../redux/actions/authActions';
+import { connect } from 'react-redux';
 
-const Settings: () => React$Node = () => {
-  return (
-    <SafeAreaView>
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={styles.scrollView}>
-        <View style={styles.sectionContainer}>
-          <Text style={styles.sectionDescription}>
-            Settings Screen
-          </Text>
+class Settings extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+  render(){
+    const { navigation } = this.props;
+    return (
+      <Container>
+        <Navbar title="Настройки" navigation={navigation} backButton/>
+        <View style={{ flex: 1 }}>
+          <List>
+            <ListItem button onPress={() => this.props.logout(navigation)}>
+              <Text>Выйти</Text>
+            </ListItem>
+          </List>
         </View>
-      </ScrollView>
-    </SafeAreaView>
-  );
-};
+      </Container>
+    );
+  }
+}
 
 const styles = StyleSheet.create({});
 
-export default Settings;
+const mapStateToProps = (state) => {
+  return {
+    loadingLogout: state.authReducer.loadingLogout,
+  };
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    logout: (nav) => dispatch(logout(nav)),
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Settings);

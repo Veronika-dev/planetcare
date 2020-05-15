@@ -8,6 +8,7 @@ const initialState = {
   error: null,
   loadingEmail: false,
   loadingCode: false,
+  loadingLogout: false,
 };
 
 const authReducer = (state = initialState, action) => {
@@ -55,11 +56,30 @@ const authReducer = (state = initialState, action) => {
         loadingCode: false,
       };
     }
-    case Types.SET_TOKEN: {
+    case Types.SET_TOKEN.SUCCESS: {
       return {
         ...state,
         token: action.token,
         loadingCode: false,
+      };
+    }
+    case Types.LOGOUT.REQUEST: {
+      return {
+        ...state,
+        loadingLogout: true,
+      };
+    }
+    case Types.LOGOUT.SUCCESS: {
+      return {
+        ...initialState,
+        loadingLogout: false,
+      };
+    }
+    case Types.LOGOUT.FAILURE: {
+      return {
+        ...state,
+        error: action.error,
+        loadingLogout: false,
       };
     }
     default: {

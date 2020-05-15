@@ -9,6 +9,12 @@ import {
 import { mainColor, descriptionColor } from '../constants';
 
 export default class SideBar extends React.Component {
+  showingName = () => {
+    const {
+      userData: { firstname, lastname },
+    } = this.props;
+    return `${firstname} ${lastname || ''}`;
+  };
   render() {
     const { navigation, userData } = this.props;
     console.log('userData', userData);
@@ -16,19 +22,19 @@ export default class SideBar extends React.Component {
       <Container style={styles.container}>
         <Content>
           <DrawerContentScrollView {...this.props}>
-            <TouchableOpacity onPress={() => navigation.navigate('Authorization', { type: 'login' })} style={styles.profileContainer}>
+            <TouchableOpacity onPress={() => navigation.navigate(userData ? 'ProfileView' : 'Authorization')} style={styles.profileContainer}>
               <View style={styles.profileContent}>
                 <Image source={require('../assets/profile_image.png')} style={styles.profileImage}  />
                 {
                   userData ?
-                    <TouchableOpacity onPress={() => {}}>
-                      <Text style={styles.nameText}>Выйти</Text>
+                    <View>
+                      <Text style={styles.nameText}>{this.showingName()}</Text>
                       {/*<Text style={styles.positionText}>Мастер</Text>*/}
-                    </TouchableOpacity> :
-                    <TouchableOpacity onPress={() => {}}>
+                    </View> :
+                    <View>
                       <Text style={styles.nameText}>Войти</Text>
                       {/*<Text style={styles.positionText}>Мастер</Text>*/}
-                    </TouchableOpacity>
+                    </View>
                 }
               </View>
             </TouchableOpacity>

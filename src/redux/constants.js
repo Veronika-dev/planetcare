@@ -1,11 +1,10 @@
-// import { store } from './store';
-
 export const host = 'http://localhost:8001/';
 
-export const getHeaders = async () => {
-  // const token = await store.getItem('token');
-  return {
-    // Authorization: `Bearer ${token}`,
+export const getHeaders = (token) => {
+  console.log('token', token);
+  return Object.assign({}, {
     'Content-Type': 'application/json',
-  };
+  }, token ? {
+    Authorization: `Bearer ${token}`,
+  } : {});
 };

@@ -42,7 +42,7 @@ class Authorization extends React.Component {
                 loadingEmail={loadingEmail}
                 loadingCode={loadingCode}
                 activeStep={activeStep}
-                login={this.props.login}
+                login={(email, code) => this.props.login(email, code, navigation)}
               />
             </View>
           </ScrollView>
@@ -103,7 +103,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     getAuthCode: email => dispatch(getAuthCode(email)),
-    login: (email, code) => dispatch(login(email, code)),
+    login: (email, code, nav) => dispatch(login(email, code, nav)),
   };
 };
 
