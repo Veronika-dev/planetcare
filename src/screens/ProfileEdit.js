@@ -2,48 +2,50 @@
 import React from 'react';
 import {
   StyleSheet,
-  ScrollView,
-  View,
 } from 'react-native';
-import { Container, Content, Form, Item, Label, Input, Icon, Picker, DatePicker, Text } from 'native-base';
+import { Container, Content, Form, Item, Label, Input } from 'native-base';
 import Navbar from '../components/Navbar';
 
 import { labelColor, navIconColor, descriptionColor } from '../constants';
+import { connect } from 'react-redux';
+import { updateUserData } from '../redux/actions/userActions';
 
-export default class MeetingCreate extends React.Component {
+class MeetingCreate extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      updated: false,
       form: {
-        firstname: 'Иван',
-        lastname: 'Иванов',
-        email: 'ivanov@gmail.com',
-        phone: '+79534449955',
-        info_about: 'Обо мне',
-        image: require('../assets/2.jpg'),
-        password: '',
-        gender: '',
-        birthdate: '',
+        firstname: '',
+        lastname: '',
+        email: '',
+        phone: '',
+        info_about: '',
+        // image: require('../assets/2.jpg'),
       },
     };
   }
-  componentDidMount(): void {
-    const { type } = this.props.route.params || {};
-    if (type) {
-      this.updateForm({ type });
+  componentDidMount = () => {
+    const { userData } = this.props;
+    if (userData && !this.state.updated) {
+      this.updateForm(userData);
     }
   }
   updateForm = (updObj) => {
     const form = Object.assign({}, this.state.form, updObj);
     this.setState({
       form,
+      updated: true,
     });
+  };
+  saveChanges = (data) => {
+    this.props.updateUserData(data);
   };
   render(){
     const { navigation } = this.props;
     const {
       form: {
-        firstname, lastname, phone, email, password, gender, birthdate, location, info_about,
+        firstname, lastname, phone, email, info_about,
       },
     } = this.state;
     return (
@@ -51,87 +53,46 @@ export default class MeetingCreate extends React.Component {
         <Navbar title="Редактирование профиля" navigation={navigation} backButton />
         <Content style={styles.content}>
           <Form>
-            <Item style={styles.itemStyle}>
+            <Item style={styles.itemStyle} floatingLabel>
               <Label style={styles.labelStyle}>Имя</Label>
               <Input
                 value={firstname}
-                onChangeText={val => this.setState({ firstname: val })}
+                onChangeText={val => this.updateForm({ firstname: val })}
+                onBlur={() => this.saveChanges({ firstname })}
               />
             </Item>
-            <Item style={styles.itemStyle}>
+            <Item style={styles.itemStyle} floatingLabel>
               <Label style={styles.labelStyle}>Фамилия</Label>
               <Input
                 value={lastname}
-                onChangeText={val => this.setState({ lastname: val })}
+                onChangeText={val => this.updateForm({ lastname: val })}
+                onBlur={() => this.saveChanges({ lastname })}
               />
             </Item>
-            <Item style={styles.picker}>
-              <Label style={styles.labelStyle}>Пол</Label>
-              <Picker
-                mode="dropdown"
-                iosIcon={<Icon name="arrow-down" style={styles.pickerIcon} />}
-                placeholder="Выберите"
-                placeholderStyle={styles.pickerPlaceholder}
-                placeholderIconColor={navIconColor}
-                selectedValue={gender}
-                onValueChange={val => this.updateForm({ gender: val })}
-              >
-                <Picker.Item label="Мужской" value="M" />
-                <Picker.Item label="Женский" value="F" />
-              </Picker>
-            </Item>
-            <Item style={styles.itemStyle}>
-              <DatePicker
-                defaultDate={new Date()}
-                minimumDate={new Date()}
-                value={birthdate}
-                locale="ru"
-                timeZoneOffsetInMinutes={undefined}
-                modalTransparent={false}
-                animationType="fade"
-                androidMode="default"
-                placeHolderText="Дата рождения"
-                placeHolderTextStyle={styles.datepickerText}
-                onDateChange={val => this.updateForm({ birthdate: val })}
-                disabled={false}
-              />
-            </Item>
-            <Item style={styles.itemStyle}>
-              <Input
-                value={location}
-                onChangeText={val => this.updateForm({ location: val })}
-                placeholder="Место жительства"
-                placeholderTextColor={labelColor}
-              />
-            </Item>
-            <Item style={styles.itemStyle}>
+            <Item style={styles.itemStyle} floatingLabel>
               <Label style={styles.labelStyle}>Телефон</Label>
               <Input
                 value={phone}
-                onChangeText={val => this.setState({ phone: val })}
+                onChangeText={val => this.updateForm({ phone: val })}
+                onBlur={() => this.saveChanges({ phone })}
               />
             </Item>
-            <Item style={styles.itemStyle}>
+            <Item style={styles.itemStyle} floatingLabel>
               <Label style={styles.labelStyle}>E-mail</Label>
               <Input
                 value={email}
-                onChangeText={val => this.setState({ email: val })}
+                onChangeText={val => this.updateForm({ email: val })}
+                onBlur={() => this.saveChanges({ email })}
               />
             </Item>
-            <Item style={styles.itemResizeStyle}>
+            <Item style={styles.itemResizeStyle} floatingLabel>
+              <Label style={styles.labelStyle}>Расскажите о себе</Label>
               <Input
                 value={info_about}
                 onChangeText={val => this.updateForm({ info_about: val })}
+                onBlur={() => this.saveChanges({ info_about })}
                 multiline
-                placeholder="Расскажите о себе"
                 placeholderTextColor={labelColor}
-              />
-            </Item>
-            <Item style={styles.itemStyle}>
-              <Label style={styles.labelStyle}>Пароль</Label>
-              <Input
-                value={password}
-                onChangeText={val => this.setState({ password: val })}
               />
             </Item>
           </Form>
@@ -150,11 +111,11 @@ const styles = StyleSheet.create({
   },
   itemStyle: {
     padding: 0,
-    height: 40,
+    height: 55,
   },
   itemResizeStyle: {
     padding: 0,
-    minHeight: 40,
+    minHeight: 55,
   },
   labelStyle: {
     color: labelColor,
@@ -198,3 +159,18 @@ const styles = StyleSheet.create({
     height: 30,
   },
 });
+
+const mapStateToProps = (state) => {
+  return {
+    userData: state.userReducer.userData,
+  };
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    updateUserData: data => dispatch(updateUserData(data)),
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(MeetingCreate);
+

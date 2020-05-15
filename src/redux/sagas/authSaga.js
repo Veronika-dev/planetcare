@@ -94,7 +94,6 @@ function* logout(data) {
     const state = yield store.getState();
     const token = state.authReducer.token;
     const result = yield call(api.logout, token);
-    console.log('result', result);
     if (result.status >= 200 && result.status < 300) {
       const { nav } = data;
       yield AsyncStorage.removeItem('token');
