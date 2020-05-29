@@ -8,3 +8,11 @@ export const getHeaders = (token) => {
     Authorization: `Bearer ${token}`,
   } : {});
 };
+
+export const MeetTypes = {
+  dump: 'Несанкционированная свалка',
+  fire: 'Пожар',
+  water_pollution: 'Загрязнение водоёма',
+  emissions: 'Выбросы',
+  meeting: 'Встреча',
+};

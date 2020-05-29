@@ -15,10 +15,10 @@ export default class Navbar extends React.Component {
   }
 
   render() {
-    const { title, navigation, backButton, transparent } = this.props;
+    const { title, subtitle, navigation, backButton, transparent } = this.props;
     return (
       <Header style={[transparent ? styles.transpNavbar : styles.navbar]}>
-        <Left>
+        <Left style={{ flex: 0 }}>
           {
             backButton ? <Button transparent onPress={() => navigation.pop()}>
               <Icon name="arrow-back" style={[styles.leftIcon, transparent ? styles.iconWhite : {}]} />
@@ -28,10 +28,11 @@ export default class Navbar extends React.Component {
               </Button>
           }
         </Left>
-        <Body>
+        <Body style={{ flex: 1 }}>
           <Title style={styles.title}>{title}</Title>
+          { subtitle && <Title style={styles.subtitle}>{subtitle}</Title> }
         </Body>
-        <Right />
+        <Right style={{ flex: 0 }} />
       </Header>
     );
   }
@@ -55,6 +56,10 @@ const styles = StyleSheet.create({
   },
   title: {
     color: navTextColor,
+  },
+  subtitle: {
+    fontSize: 12,
+    fontWeight: '300',
   },
 });
 

@@ -13,13 +13,12 @@ export default class Dialogs extends React.Component {
     this.state = {
       conversations: [
         {
-          title: 'Тушим пожар вместе',
+          title: 'Уборка мусора',
           type: 'conversation',
           status: 'active',
-          main_image: require('../assets/2.jpg'),
           last_msg: {
-            date: '20.02.2020 14:00',
-            text: 'Последнее сообщение Последнее сообщение...',
+            date: '28.05.2020 18:03',
+            text: 'Предалагаю жильцам и всем желающим собраться для уборки мусора во дворе',
           },
         },
       ],
@@ -39,11 +38,11 @@ export default class Dialogs extends React.Component {
                 return (
                   <ListItem key={i} avatar button onPress={() => navigation.navigate('Dialog')}>
                     <Left>
-                      <Thumbnail source={item.main_image} />
+                      <View style={styles.thumbnail}><Text style={styles.thumbnailText}>01.06</Text></View>
                     </Left>
                     <Body>
                       <Text>{item.title}</Text>
-                      <Text note>{item.last_msg.text}</Text>
+                      <Text note numberOfLines={2}>{item.last_msg.text}</Text>
                     </Body>
                     <Right>
                       <Text note>{item.last_msg.date}</Text>
@@ -68,6 +67,17 @@ export default class Dialogs extends React.Component {
 }
 
 const styles = StyleSheet.create({
+  thumbnail: {
+    height: 60,
+    width: 60,
+    backgroundColor: appColor,
+    borderRadius: 30,
+    paddingTop: 23,
+  },
+  thumbnailText: {
+    color: '#ffffff',
+    fontSize: 12,
+  },
   fab: {
     width: 140,
   },
@@ -92,7 +102,7 @@ const styles = StyleSheet.create({
     shadowOffset: { height: 0, width: 0 },
     borderWidth: 1,
     borderColor: appColor,
-    borderStyle: 'solid'
+    borderStyle: 'solid',
   },
   btnMeetingText: {
     color: appColor,

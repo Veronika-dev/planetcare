@@ -20,6 +20,7 @@ import InstructionsViewScreen from './src/screens/InstructionsView';
 import AuthorizationScreen from './src/screens/Authorization';
 import ProfileViewScreen from './src/screens/ProfileView';
 import ProfileEditScreen from './src/screens/ProfileEdit';
+import AdminEditScreen from './src/screens/AdminEdit';
 import DrawerStack from './src/DrawerStack';
 
 import { store } from './src/redux/store';
@@ -41,6 +42,7 @@ const App: () => React$Node = () => {
           <Stack.Screen name="Authorization" component={AuthorizationScreen} />
           <Stack.Screen name="ProfileView" component={ProfileViewScreen} />
           <Stack.Screen name="ProfileEdit" component={ProfileEditScreen} />
+          <Stack.Screen name="AdminEdit" component={AdminEditScreen} />
         </Stack.Navigator>
       </NavigationContainer>
     </Provider>

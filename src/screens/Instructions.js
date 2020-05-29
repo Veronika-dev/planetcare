@@ -12,11 +12,11 @@ export default class Instructions extends React.Component {
     this.state = {
       instructions: [
         {
-          title: 'С чего начать?',
+          title: 'С чего начать, если хочешь заботиться об экологии. Восемь правил',
           description: 'Чтобы защищать природу, нужно...',
           type: 'useful',
-          created_date: '20.04.2020 13:43',
-          images: [require('../assets/2.jpg')],
+          created_date: '27.05.2020 17:20',
+          images: [require('../assets/images/save_nature.jpg')],
         },
       ],
     };
@@ -38,7 +38,6 @@ export default class Instructions extends React.Component {
                     </Left>
                     <Body>
                       <Text>{item.title}</Text>
-                      <Text note>{item.description}</Text>
                     </Body>
                     <Right>
                       <Text note>{item.created_date}</Text>

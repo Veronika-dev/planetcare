@@ -15,6 +15,7 @@ import FriendsScreen from './screens/Friends';
 import InstructionsScreen from './screens/Instructions';
 import RatingScreen from './screens/Rating';
 import SettingsScreen from './screens/Settings';
+import AdminPanel from './screens/AdminPanel';
 
 import Sidebar from './components/Sidebar';
 
@@ -29,7 +30,7 @@ class DrawerStack extends React.Component {
   render() {
     const { userData } = this.props;
     return (
-      <Drawer.Navigator initialRouteName="News" drawerContent={props => <Sidebar {...props} userData={userData} /> }
+      <Drawer.Navigator initialRouteName="Map" drawerContent={props => <Sidebar {...props} userData={userData} /> }
                         drawerType="slide" overlayColor="rgba(51, 51, 51, 0.3)"
                         drawerContentOptions={{
                           activeBackgroundColor: 'rgba(0, 0, 0, 0)',
@@ -53,6 +54,7 @@ class DrawerStack extends React.Component {
         <Drawer.Screen name="Rating" component={RatingScreen} options={{ title: 'Рейтинг',
           drawerIcon: ({ focused }) => <View style={styles.iconContainer}><Icon name="ribbon" style={{ ...styles.icon, color: focused ? appColor : navIconColor }} /></View> }} />
         <Drawer.Screen name="Settings" component={SettingsScreen} options={{ title: 'Настройки и приватность' }} />
+        <Drawer.Screen name="AdminPanel" component={AdminPanel} options={{ title: 'Администрирование' }} />
       </Drawer.Navigator>
     );
   }

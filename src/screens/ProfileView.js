@@ -8,25 +8,65 @@ import {
   Body, Container,
   List, Left, ListItem,
   Text, Thumbnail,
-  Tabs, Tab, TabHeading, Icon,
+  Tabs, Tab, TabHeading, Icon, Right,
 } from 'native-base';
 
 import Navbar from '../components/Navbar';
+import Blog from '../components/Blog';
 
 import { appColor } from '../constants';
 import { setToken } from '../redux/actions/authActions';
 import { connect } from 'react-redux';
+import { MeetTypes } from '../redux/constants';
 
 class ProfileView extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       activeTab: 0,
+      posts: [
+        {
+          author: 'Вероника Копытова',
+          description: 'Собираемся убрать с единомышленниками мусор в нашем дворе, чтобы приятно было здесь находиться...',
+          images: [require('../assets/images/dump.jpg')],
+          date: '29.05.2020 16:10',
+        },
+      ],
+      marks: [
+        {
+          event_date: '28.05.2020 17:41',
+          images: [require('../assets/2.jpg')],
+          title: 'Много мусора на берегу в зоне отдыха',
+          description: 'Отдыхающие систематически выбрасывают мусор после отдыха на берег, а не увозят с собой. Теперь здесь образовалась большая свалка',
+          ness_equip: '',
+          avail_equip: '',
+          type: 'dump',
+          location: 'Новосибирская обл., г. Бердск, Парк отдыха "Старый Бердск"',
+        },
+        {
+          title: 'Уборка мусора',
+          description: 'Предалагаю жильцам и всем желающим собраться для уборки мусора во дворе',
+          ness_equip: 'Грабли, мешки для мусора, перчатки',
+          avail_equip: 'Одни грабли и 20 мешков для мусора',
+          type: 'meeting',
+          location: 'Новосибирская обл., г. Бердск, ул. Вокзальная, д.6',
+          counterStart: '3',
+          counterEnd: '20',
+          event_date: '1.06.2020 10:00',
+        },
+      ],
+      history: [
+        {
+          title: 'Инициатор встречи',
+          points: '5 баллов',
+          date: '1.06.2020 10:00',
+        },
+      ],
     };
   }
   render(){
     const { navigation, userData } = this.props;
-    const { activeTab } = this.state;
+    const { activeTab, marks, history, posts } = this.state;
     return (
       <Container>
         <Navbar title="Профиль" navigation={navigation} backButton />
@@ -43,7 +83,7 @@ class ProfileView extends React.Component {
                   </Left>
                   <Body style={styles.listBodyStyle}>
                     <Text>{userData.firstname} {userData.lastname}</Text>
-                    { userData.place && <Text note>{userData.place} место</Text> }
+                    <Text note>1 место</Text>
                   </Body>
                 </ListItem>
               </List>
@@ -54,21 +94,61 @@ class ProfileView extends React.Component {
                   <Text style={[styles.tabTextStyle, activeTab === 0 ? styles.activeTabTextStyle : {}]}>Блог</Text>
                 </TabHeading>}
               >
-                <Text>1</Text>
+                <Blog posts={posts} />
               </Tab>
               <Tab heading={
                 <TabHeading style={styles.tabHeadStyle}>
                   <Text style={[styles.tabTextStyle, activeTab === 1 ? styles.activeTabTextStyle : {}]}>Отметки</Text>
                 </TabHeading>}
               >
-                <Text>1</Text>
+                <List>
+                  {
+                    marks.map((item, i) => {
+                      return (
+                        <ListItem avatar button onPress={() => navigation.navigate('MeetingView', { type: 'meet' })} key={i}>
+                          <Left>
+                            <Thumbnail source={item.type === 'dump' ? require('../assets/images/trash.jpg') : require('../assets/images/meeting.jpg')} />
+                          </Left>
+                          <Body>
+                            <Text>{item.title}</Text>
+                            <Text note>{MeetTypes[item.type] || ''}</Text>
+                            <Text note>{item.location}</Text>
+                          </Body>
+                          <Right>
+                            <Text note>{item.event_date}</Text>
+                            <Text note style={styles.statusStyle}>{item.type === 'dump' ? 'Создано' : 'Поиск участников'}</Text>
+                          </Right>
+                        </ListItem>
+                      );
+                    })
+                  }
+                </List>
               </Tab>
               <Tab heading={
                 <TabHeading style={styles.tabHeadStyle}>
                   <Text style={[styles.tabTextStyle, activeTab === 2 ? styles.activeTabTextStyle : {}]}>Прогресс</Text>
                 </TabHeading>}
               >
-                <Text>1</Text>
+                <List>
+                  {
+                    history.map((item, i) => {
+                      return (
+                        <ListItem avatar button onPress={() => navigation.navigate('MeetingView', { type: 'meet' })} key={i}>
+                          <Left>
+                            <Thumbnail source={item.type === 'dump' ? require('../assets/images/trash.jpg') : require('../assets/images/meeting.jpg')} />
+                          </Left>
+                          <Body style={styles.listItemStyle}>
+                            <Text>{item.title}</Text>
+                            <Text note>+{item.points}</Text>
+                          </Body>
+                          <Right style={styles.listItemStyle}>
+                            <Text note>{item.date}</Text>
+                          </Right>
+                        </ListItem>
+                      );
+                    })
+                  }
+                </List>
               </Tab>
             </Tabs>
           </ScrollView> :
@@ -106,6 +186,13 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     paddingBottom: 40,
   },
+  statusStyle: {
+    color: appColor,
+    fontWeight: '400',
+  },
+  listItemStyle: {
+    borderBottomWidth: 0,
+  }
 });
 
 const mapStateToProps = (state) => {

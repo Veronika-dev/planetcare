@@ -4,9 +4,10 @@ import {
   View,
 } from 'react-native';
 import Navbar from '../components/Navbar';
-import { Body, Container, Left, List, ListItem, Right, Thumbnail, Text } from 'native-base';
+import {Body, Container, Left, List, ListItem, Right, Thumbnail, Text, Icon, Fab} from 'native-base';
+import {appColor} from '../constants';
 
-export default class News extends React.Component {
+export default class AdminPanel extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -28,13 +29,13 @@ export default class News extends React.Component {
     const { news } = this.state;
     return (
       <Container>
-        <Navbar title="Новости" navigation={navigation}/>
+        <Navbar title="Админ - новости" navigation={navigation}/>
         <View style={{ flex: 1 }}>
           <List>
             {
               news.map((item, ind) => {
                 return (
-                  <ListItem avatar button onPress={() => navigation.navigate('NewsView')} key={ind}>
+                  <ListItem avatar button onPress={() => navigation.navigate('AdminEdit')} key={ind}>
                     <Left>
                       <Thumbnail source={item.images[0]} />
                     </Left>
@@ -50,9 +51,29 @@ export default class News extends React.Component {
             }
           </List>
         </View>
+        <Fab
+          direction="up"
+          containerStyle={styles.fab}
+          style={styles.btnFab}
+          position="bottomRight"
+          onPress={() => {}}>
+          <Icon name="add" style={styles.fabIcon} />
+        </Fab>
       </Container>
     );
   }
 }
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  fab: {
+    width: 140,
+  },
+  btnFab: {
+    backgroundColor: appColor,
+    right: 0,
+  },
+  fabIcon: {
+    fontSize: 38,
+    top: 7,
+  },
+});

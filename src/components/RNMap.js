@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Image, View } from 'react-native';
 import MapView, { Marker } from 'react-native-maps';
 import Geolocation from '@react-native-community/geolocation';
 
@@ -10,11 +10,17 @@ export default class SideBar extends React.Component {
     markers: [
       {
         latlng: {
-          latitude: 54.762082,
-          longitude: 83.113769,
+          latitude: 54.793493,
+          longitude: 83.041296,
         },
-        title: 'Title',
-        description: 'description'
+        title: 'Много мусора на берегу в зоне отдыха',
+      },
+      {
+        latlng: {
+          latitude: 54.765595,
+          longitude: 83.105032,
+        },
+        title: 'Уборка мусора',
       },
     ],
   };
@@ -61,11 +67,8 @@ export default class SideBar extends React.Component {
             key={i}
             coordinate={marker.latlng}
             title={marker.title}
-            description={marker.description}
           >
-            <View style={{ backgroundColor: "red", padding: 5 }}>
-              <Text>{marker.title}</Text>
-            </View>
+            <Image source={require('../assets/images/loc_green.png')} style={styles.iconMap} />
           </Marker>
         ))}
       </MapView>
@@ -76,5 +79,10 @@ export default class SideBar extends React.Component {
 const styles = StyleSheet.create({
   map: {
     ...StyleSheet.absoluteFillObject,
+    zIndex: 2,
+  },
+  iconMap: {
+    height: 30,
+    width: 22,
   },
 });

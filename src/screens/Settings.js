@@ -20,6 +20,9 @@ class Settings extends React.Component {
         <Navbar title="Настройки" navigation={navigation} backButton/>
         <View style={{ flex: 1 }}>
           <List>
+            <ListItem button onPress={() => {}}>
+              <Text>О приложении</Text>
+            </ListItem>
             <ListItem button onPress={() => this.props.logout(navigation)}>
               <Text>Выйти</Text>
             </ListItem>

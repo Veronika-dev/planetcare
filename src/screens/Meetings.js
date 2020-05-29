@@ -7,6 +7,7 @@ import { Container, Fab, Icon, Button, Text, List, ListItem, Left, Thumbnail, Bo
 import Navbar from '../components/Navbar';
 
 import { appColor } from '../constants';
+import { MeetTypes } from '../redux/constants';
 
 export default class Meetings extends React.Component {
   constructor(props) {
@@ -15,11 +16,25 @@ export default class Meetings extends React.Component {
       active: false,
       marks: [
         {
-          title: 'Тушим пожар',
-          type: 'Тушение пожара',
-          location: 'Новосибирск',
-          event_date: '20.04.2020 13:43',
+          event_date: '28.05.2020 17:41',
           images: [require('../assets/2.jpg')],
+          title: 'Много мусора на берегу в зоне отдыха',
+          description: 'Отдыхающие систематически выбрасывают мусор после отдыха на берег, а не увозят с собой. Теперь здесь образовалась большая свалка',
+          ness_equip: '',
+          avail_equip: '',
+          type: 'dump',
+          location: 'Новосибирская обл., г. Бердск, Парк отдыха "Старый Бердск"',
+        },
+        {
+          title: 'Уборка мусора',
+          description: 'Предалагаю жильцам и всем желающим собраться для уборки мусора во дворе',
+          ness_equip: 'Грабли, мешки для мусора, перчатки',
+          avail_equip: 'Одни грабли и 20 мешков для мусора',
+          type: 'meeting',
+          location: 'Новосибирская обл., г. Бердск, ул. Вокзальная, д.6',
+          counterStart: '3',
+          counterEnd: '20',
+          event_date: '1.06.2020 10:00',
         },
       ],
     };
@@ -37,16 +52,16 @@ export default class Meetings extends React.Component {
                   return (
                     <ListItem avatar button onPress={() => navigation.navigate('MeetingView', { type: 'meet' })} key={i}>
                       <Left>
-                        <Thumbnail source={item.images[0]} />
+                        <Thumbnail source={item.type === 'dump' ? require('../assets/images/trash.jpg') : require('../assets/images/meeting.jpg')} />
                       </Left>
                       <Body>
                         <Text>{item.title}</Text>
-                        <Text note>{item.type}</Text>
+                        <Text note>{MeetTypes[item.type] || ''}</Text>
                         <Text note>{item.location}</Text>
                       </Body>
                       <Right>
                         <Text note>{item.event_date}</Text>
-                        <Text note style={styles.statusStyle}>В процессе</Text>
+                        <Text note style={styles.statusStyle}>{item.type === 'dump' ? 'Создано' : 'Поиск участников'}</Text>
                       </Right>
                     </ListItem>
                   )
@@ -64,8 +79,8 @@ export default class Meetings extends React.Component {
             <Button style={styles.btnMeeting} onPress={() => navigation.navigate('MeetingCreate', { type: 'meet' })}>
               <Text style={styles.btnMeetingText}>Встреча</Text>
             </Button>
-            <Button style={styles.btnMeeting} onPress={() => navigation.navigate('MeetingCreate', { type: 'pollution' })}>
-              <Text style={styles.btnMeetingText}>Загрязнение</Text>
+            <Button style={styles.btnMeeting} onPress={() => navigation.navigate('MeetingCreate', { type: 'incident' })}>
+              <Text style={styles.btnMeetingText}>Инцидент</Text>
             </Button>
           </Fab>
         </View>
